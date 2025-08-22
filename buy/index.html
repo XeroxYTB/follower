@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Followers YouTube - Démo</title>
+<style>
+  :root {
+    --bg: #fff;
+    --primary: #ff2e5c;
+    --secondary: #0066ff;
+    --text: #333;
+    --muted: #666;
+    --radius: 10px;
+    --shadow: 0 4px 12px rgba(0,0,0,.1);
+  }
+
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { font-family: 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); line-height:1.6; }
+
+  header { display:flex; justify-content: space-between; align-items:center; padding:1rem 2rem; border-bottom:1px solid #eee; }
+  header .logo { font-weight:bold; font-size:1.5rem; color:var(--primary); }
+  header nav a { margin-left:1.5rem; text-decoration:none; color:var(--text); font-weight:500; }
+  header nav a:hover { color:var(--primary); }
+
+  main { max-width:1000px; margin:auto; padding:2rem 1rem; }
+
+  .intro { text-align:center; margin-bottom:3rem; }
+  .intro h1 { font-size:2rem; margin-bottom:0.5rem; }
+  .intro p { color:var(--muted); }
+
+  .services { display:grid; grid-template-columns: repeat(auto-fit, minmax(220px,1fr)); gap:1rem; margin-bottom:3rem; }
+  .service { background:#f9f9f9; border-radius:var(--radius); padding:1.5rem; text-align:center; border:1px solid #eee; transition: transform .2s, box-shadow .2s; }
+  .service:hover { transform:translateY(-5px); box-shadow: var(--shadow); }
+  .service h3 { margin-bottom:0.5rem; color:var(--primary); }
+  .service p { color:var(--muted); }
+
+  .steps { display:grid; grid-template-columns: repeat(auto-fit, minmax(220px,1fr)); gap:2rem; text-align:center; }
+  .step { padding:1.5rem; border:1px solid #eee; border-radius:var(--radius); background:#fafafa; }
+  .step .number { display:inline-block; width:50px; height:50px; line-height:50px; background:var(--primary); color:#fff; font-weight:bold; border-radius:50%; margin-bottom:1rem; font-size:1.2rem; }
+
+  footer { text-align:center; padding:1.5rem; border-top:1px solid #eee; color:var(--muted); margin-top:3rem; }
+
+  button { background:var(--primary); border:none; color:#fff; padding:0.7rem 1.4rem; border-radius:6px; cursor:pointer; transition: background .2s; font-weight:600; }
+  button:hover { background:#e60050; }
+</style>
+</head>
+<body>
+
+<header>
+  <a href="https://xeroxytb.github.io/follower" style="text-decoration: none;" class="logo">
+      Follower
+  </a>
+</header>
+
+<main>
+
+  <section class="intro">
+  <h3 style="color: var(--primary);">Voici les options dont nous disposons jusqu'à maintenant.</h3>
+  <h4 style="color: var(--muted);">Sélectionnez celle qui vous convient.</h4>
+</section>
+  
+  <section id="services" class="services">
+    <div class="service">
+      <h3>Vues YouTube</h3>
+      <p>Augmentez rapidement le nombre de vues sur vos vidéos.</p>
+      <button onclick="window.location.href='https://xeroxytb.github.io/follower/buy/vues';">Commander</button>
+    </div>
+    <div class="service">
+      <h3>Abonnés YouTube</h3>
+      <p>Recevez jusqu'à 50 abonnés rapidement.</p>
+      <button onclick="window.location.href='https://xeroxytb.github.io/follower/buy/folowers';">Commander</button>
+    </div>
+    <div class="service">
+      <h3>Likes YouTube</h3>
+      <p>Boostez vos vidéos avec des likes authentiques.</p>
+      <button onclick="window.location.href='https://xeroxytb.github.io/follower/buy/likes';">Commander</button>
+    </div>
+    <div class="service">
+      <h3>Commentaires</h3>
+      <p>Faites vivre vos vidéos grâce à des commentaires.</p>
+      <button onclick="window.location.href='https://xeroxytb.github.io/follower/buy/com';">Commander</button>
+    </div>
+  </section>
+  
+</main>
+
+<footer>
+  &copy; 2025 Follower • Tous droits réservés
+</footer>
+
+</body>
+</html>
